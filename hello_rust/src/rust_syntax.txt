@@ -1,0 +1,41 @@
+Line 1: fn main() is something that always appears at the beginning of every Rust program. main() is called a function, and any code inside its curly brackets {} will be executed.
+
+Line 2: println!() is a macro, used to output/print text to the screen. In our example it will output "Hello World!". To end the code, you must remember a semicolon (;).
+
+What is a macro?
+
+A macro is like a function, but with an exclamation mark (!) after it. Don't worry about the terminology for now. For now, just know that macros are similar to functions (they execute things), but they do not always follow the same rules as functions. You will learn more about macros later.
+
+Good to know: The Rust compiler ignores white spaces.
+
+The code above could also been written as:
+fn main(){println!("Hello World!");}
+
+However, multiple lines and indentation makes the code more readable.
+
+
+You can use as many println!() macros as you want. Note that it will add a new line for each macro:
+Example
+println!("Hello World!");
+println!("I am learning Rust.");
+println!("It is awesome!");
+
+The Print Macro
+There is also a print!() macro, which is similar to println!().
+The only difference is that it does not insert a new line at the end of the output:
+Example
+print!("Hello World! ");
+print!("I will print on the same line.");
+
+
+Add New Lines Manually
+If you really want to add a new line in print!(), you can use the \n character:
+Example
+print!("Hello World!\n");
+print!("I will print on the same line.");
+
+//Single line comment
+/*
+multiple
+lines
+*/
